@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App({ maxLength, children }) {
+
+    const [hidden, setHidden] = useState(true);
+
+    if (children.length < maxLength) {  
+        return (
+            <div>
+                <h1>if block executerd</h1>
+                <p>{children}</p>
+            </div>
+            )
+    }
+
+    return (
+        <div>
+            {hidden ? children.substr(0, 300).trim() : children }
+            {hidden ?
+                <button onClick={ (e) => setHidden(false) }>Read More</button>
+                :
+                <button onClick={ ()=> setHidden(true)}>Read Less</button>
+                }
+        </div>
+        )
+
+
 }
-
 export default App;
+

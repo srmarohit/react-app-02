@@ -1,0 +1,8 @@
+
+
+.searchBtn:hover{
+  background-color: white !important;
+  color:black !important;
+  transition: all .3s ease-in-out !important;
+}
+

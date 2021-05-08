@@ -1,3 +1,29 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+/* Euro Banking Website Design using React */
+
+[-] include files to index.html
+
+* <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+* <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+*<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ 
+* <script src="https://unpkg.com/@popperjs/core@2" type="text/JavaScript"></script>
+* <script src="https://cdn.usebootstrap.com/bootstrap/4.5.0/js/bootstrap.min.js" type="text/JavaScript"></script>
+* <script src="https://cdn.usebootstrap.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" type="text/JavaScript"></script>
+
+[-] create directory components inside src folder.
+[-] create all js file into components folder.
+
+<example ----->
+
+src
+  components
+       topbar.js
+       menubar.js
+       searchbar.js
+       heroslider.js
